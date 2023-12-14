@@ -7,7 +7,7 @@ services:
     ports:
       - 8080:80
     volumes:
-      - grav-data:/var/www/html
+      - grav-data:/var/www/html/user
 
 volumes:
   grav-data:
