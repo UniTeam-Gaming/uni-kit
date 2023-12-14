@@ -20,4 +20,5 @@ It will start the kit-blog project with a Grav CMS container.
 Just go to http://localhost:8080 to see the result.
 
 After that, you will have a folder structure like this:
+
 ![Grav Data](docs/images/grav-data.png)
