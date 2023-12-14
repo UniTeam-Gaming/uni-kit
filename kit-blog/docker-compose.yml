@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  grav:
+    build: ./
+    restart: always
+    ports:
+      - 8080:80
+    volumes:
+      - grav-data:/var/www/html
+
+volumes:
+  grav-data:
+    driver: local
+    driver_opts:
+      type: none
+      device: grav-data
+      o: bind
