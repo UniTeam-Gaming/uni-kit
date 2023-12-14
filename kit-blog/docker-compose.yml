@@ -7,12 +7,26 @@ services:
     ports:
       - 8080:80
     volumes:
-      - grav-data:/var/www/html/user
+      - grav-user:/var/www/html/user
+      - grav-backup:/var/www/html/backup
+      - grav-logs:/var/www/html/logs
 
 volumes:
-  grav-data:
+  grav-user:
     driver: local
     driver_opts:
       type: none
-      device: grav-data
+      device: grav/user
+      o: bind
+  grav-backup:
+    driver: local
+    driver_opts:
+      type: none
+      device: grav/backup
+      o: bind
+  grav-logs:
+    driver: local
+    driver_opts:
+      type: none
+      device: grav/logs
       o: bind

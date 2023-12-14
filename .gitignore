@@ -1,1 +1,7 @@
-/kit-blog/grav-data/
+# Ignore everything in this directory
+/kit-blog/grav/user/
+/kit-blog/grav/backup/
+/kit-blog/grav/logs/
+
+# Always include the .gitkeep file to keep the directories
+!**/.gitkeep
